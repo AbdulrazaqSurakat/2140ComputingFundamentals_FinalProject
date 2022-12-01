@@ -4,5 +4,5 @@ class Items:
     """
 
     def __init__(self, cost, calories) -> None:
-        self.cost = 0
-        self.calories = 0
+        self.cost = cost
+        self.calories = calories
