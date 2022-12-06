@@ -1,7 +1,7 @@
 from cart import Cart
 from burger import Burger
 
-class cartView:
+class Cart_view:
     def __init__(self, model: Cart):
         self.model = model
 
