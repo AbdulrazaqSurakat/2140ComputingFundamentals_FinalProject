@@ -4,14 +4,14 @@ from side import Side
 from burger import Burger
 
 
-SAVINGS = 0.9
+SAVINGS = 0.9 #initialize savings amount
 
 class Burger_combo(Items):
-    def __init__(self, drink, side, burger, name) -> None:
-        calories = drink.calories + side.calories + burger.calories
-        cost = round(SAVINGS * (drink.cost + side.cost + burger.cost), 2)
-        super().__init__(cost, calories)
-        self.drink = drink
-        self.side = side
-        self.burger = burger
-        self.name = name
+    def __init__(self, drink, side, burger, name) -> None:# contructor and arguments inside init
+        calories = drink.calories + side.calories + burger.calories #initializes caroies as combination of all the food item calories
+        cost = round(SAVINGS * (drink.cost + side.cost + burger.cost), 2)# rounds and initializes costs as combination of all the costs 
+        super().__init__(cost, calories)# gives asccess to methods and properties of Items class
+        self.drink = drink# initializes drink
+        self.side = side# initializes side
+        self.burger = burger# initializes burger
+        self.name = name# initializes name
