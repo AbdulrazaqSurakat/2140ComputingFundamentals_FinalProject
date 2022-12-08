@@ -15,6 +15,8 @@ userDrink = Drink("Sprite",3.99, 100)
 userSide = Side(f"Onion Rings", 4.99, 60)
 
 class Test(unittest.TestCase):
+    """creates the Test class to perform unit tests
+    """
 
     def test_burger(self):
         self.assertIsInstance(userBurger, Burger)
